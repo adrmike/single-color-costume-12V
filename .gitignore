@@ -1,0 +1,11 @@
+.bash_history
+.bash_logout
+.bashrc
+.cache/
+.gitconfig
+.local/
+.profile
+.python_history
+.ssh/
+.vim/
+.viminfo
