@@ -10,4 +10,4 @@
 .vim/
 .viminfo
 .vscode-server/
-.wget-gsts
+.wget-hsts
