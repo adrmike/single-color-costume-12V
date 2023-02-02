@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Wifi Led Strip </title>
+<meta name="viewpoint" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1, maximum-scale = 1, user-scalable = no" /> <meta name="apple-mobile-web-app-title" content="Wifi Led" /> <meta name="apple-mobile-web-app-capable" content="yes" />  
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='Style.css') }}">
+</head> <body>
+    <table class="Colours" cellspacing="10" border="0">
+        <tr>
+            <td onClick="SendColour('255')" class="button" style="background-color: lightblue;">255</td>
+            <td onClick="SendColour('200')" class="button" style="background-color: lightblue;">200</td>
+        </tr>
+        <tr>
+            <td onClick="SendColour('150')" class="2ndrow button" style="background-color: lightblue;">150</td>
+            <td onClick="SendColour('100')" class="2ndrow button" style="background-color: lightblue;">100</td>
+        </tr>
+        <tr>
+            <td onClick="SendColour('50')" class="3rdrow button" style="background-color: lightblue;">50</td>
+            <td onClick="SendColour('10')" class="3rdrow button" style="background-color: lightblue;">10</td>
+        </tr>
+        <tr>
+            <td onClick="SendColour('0')" class="3rdrow button" style="background-color: lightblue;">0</td>
+            <td onClick="SendColour('0')" class="3rdrow button" style="background-color: lightblue;">0</td>
+        </tr>
+        
+        </tr>
+        
+    </table>
+<script>
+function SendColour(ClickedBrightness) { 
+xhttp = new XMLHttpRequest();
+
+xhttp.open("GET", "?Bright=" + ClickedBrightness, false);
+xhttp.send();
+
+}
+</script>
+</body>
+</html>
