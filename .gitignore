@@ -9,3 +9,5 @@
 .ssh/
 .vim/
 .viminfo
+.vscode-server/
+.wget-gsts
