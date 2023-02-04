@@ -6,7 +6,7 @@ Code and Pi OS configuration files for my single color LED 12V strip based costu
 #### Git setup
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y git python-pip flask pigpio rng-tools
+sudo apt install -y git python3-pip flask pigpio rng-tools
 git config --global user.name "Admiral Funtimes"
 git config --global user.email noman800@gmail.com
 git config --global init.defaultBranch main
